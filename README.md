@@ -21,20 +21,13 @@ Ans: This code makes use of the Flask back-end framework. Sqlite3, Pandas, CSV, 
 
 Q3: If you had more time, what further improvements or new features would you add?
 Ans: If I had more time, I would incorporate the following upgrades and additions: 
-
-      Access to specific sites or functions is restricted by user authentication and authorisation. 
-
-      Keep track of the user's gaming history and offer a scoreboard with the best results. 
-
-      Increase the amount of information in the temperature.csv file and provide users the choice to filter it by time, place, or temperature range. 
-
-      Visualize the temperature data using a more user-friendly interface that includes graphs and charts. 
-
-      Implement a feature that lets the user select the game's level of difficulty (e.g., easier or harder). 
-
-      Include a help section with thorough directions and game rules. 
-
-      Improve the website's general look and feel, as well as the performance of the code.
+      1. Access to specific sites or functions is restricted by user authentication and authorisation. 
+      2. Keep track of the user's gaming history and offer a scoreboard with the best results. 
+      3. Increase the amount of information in the temperature.csv file and provide users the choice to filter it by time, place, or temperature range. 
+      4. Visualize the temperature data using a more user-friendly interface that includes graphs and charts. 
+      5. Implement a feature that lets the user select the game's level of difficulty (e.g., easier or harder). 
+      6. Include a help section with thorough directions and game rules. 
+      7. Improve the website's general look and feel, as well as the performance of the code.
 
 
 Q4: What steps did you take to future proof the application for possible expansions?
