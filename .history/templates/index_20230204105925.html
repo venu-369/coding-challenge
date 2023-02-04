@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <style>
+    /* Add styles for the weather animations */
+    .weather-container {
+      background-image: url("https://www.transparenttextures.com/patterns/dark-denim-3.png");
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .weather-animation {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .rain {
+      background: url('./rain.gif') repeat-x bottom;
+    }
+
+    .snow {
+      background: url('./snow.gif') repeat-x bottom;
+    }
+
+    .sun {
+      background: url('./sun.gif') no-repeat center;
+      background-size: cover;
+    }
+  </style>
+  
+  <div class="weather-container">
+    <div class="weather-animation {{ weather }}"></div>
+    <div class="card p-5">
+      <h1 class="text-center font-weight-bold">Guess the Temperature</h1>
+      <p class="text-center">Can you guess the temperature on this date: {{ randomDate[1] }}</p>
+      <a class="btn btn-link float-right" href="/">Change Date</a>
+      <form method="post" action="/result" class="my-5">
+        <div class="form-group">
+            <label for="guess-temperature">Enter your guessed temperature</label>
+            <input type="number" 
+                   name="guess-temperature"
+                   placeholder="Enter temperature" 
+                   class="form-control"
+                   value="{{ request.form['guess-temperature'] }}" 
+                   step="any" required></input>
+            <input type="text" 
+                   hidden="true" 
+                   name="date"
+                   value="{{ randomDate[0] }}"></input>
+        </div>
+    
+        <div class="form-group text-center">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+{% endblock %}

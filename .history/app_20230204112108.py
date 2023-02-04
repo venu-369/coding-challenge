@@ -75,4 +75,4 @@ def compareTemperatures():
 
 
 
-    return render_template('index.html', randomDate=foundRowInCsvAsArray)
+  return render_template('index.html', randomDate=foundRowInCsvAsArray)
