@@ -7,7 +7,7 @@ A really good tutorial about flask with examples: https://www.digitalocean.com/c
 
 To run the code: 
 
- flask run (or) flask -p 5000
+ flask run (or) flask run -p 5000
 
 
 Q1: What framework/libraries did you use for the front-end and why?
@@ -28,10 +28,11 @@ Ans: If I had more time, I would incorporate the following upgrades and addition
       5. Implement a feature that lets the user select the game's level of difficulty (e.g., easier or harder). 
       6. Include a help section with thorough directions and game rules. 
       7. Improve the website's general look and feel, as well as the performance of the code.
+      8. Comparision can be made on the frontend
 
 
 Q4: What steps did you take to future proof the application for possible expansions?
-Ans: The programme was not future-proofed in the code to accommodate potential additions. In order to store the user's estimate, the application reads information from a CSV file and stores it in a SQLite database. The CSV file cannot be expanded to accommodate more data, nor can the database be made larger. The application should be future-proofed by taking steps like dynamic data loading, deploying a more scalable database solution, and using the right data management and storage approaches.
+Ans: The programme was not future-proofed in the code to accommodate potential additions. In order to store the user's estimate, the application reads information from a CSV file and stores it in a SQLite database. The CSV file cannot be expanded to accommodate more data, nor can the database be made larger. The application should be future-proofed by taking steps like dynamic data loading, deploying a more scalable database solution, and using the right data management and storage approaches. The program picks random dates from csv file because we are using unix time stamp that helps us find the actial temperature
 
 
 Q5:Which part of the challenge are you most proud of and why?
